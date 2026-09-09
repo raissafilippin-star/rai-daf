@@ -1,0 +1,134 @@
+/* Página */
+
+body {
+background-color: #080b18;
+color: white;
+font-family: Arial, sans-serif;
+margin: 0;
+}
+
+/* Cabeçalho */
+.banner { 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+header {
+background-color: #101426;
+padding: 20px;
+text-align: center;
+}
+
+header h1 {
+color: #9b5cff;
+}
+
+header input {
+padding: 10px;
+width: 300px;
+}
+
+header button {
+padding: 10px;
+margin: 5px;
+}
+
+/* Menu */
+
+nav {
+background-color: #101426;
+padding: 20px;
+width: 200px;
+}
+
+nav a {
+display: block;
+color: white;
+text-decoration: none;
+padding: 10px;
+}
+
+nav a {
+background-color: #9b5cff;
+}
+
+/* Conteúdo */
+ #one-piece {
+    width: 25%;
+    height: 300px;
+ }
+
+ #haikyuu {
+    width: 25%;
+    height: 300px;
+ }
+
+ #blue-lock {
+    width: 25%;
+    height: 300px;
+ }
+#time-loop {
+    width: 25%;
+    height: 300px;
+ }
+
+main {
+padding: 30px;
+}
+
+main section img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+/* Títulos */
+
+h2 {
+color: #9b5cff;
+}
+
+/* Banner */
+
+main section {
+background-color: #11172a;
+padding: 30px;
+margin-bottom: 30px;
+}
+
+/* Animes */
+
+article {
+background-color: #11172a;
+display: inline-block;
+width: 180px;
+margin: 10px;
+padding: 15px;
+vertical-align: top;
+}
+
+article img {
+width: 100%;
+height: 250px;
+}
+
+article h3 {
+margin-bottom: 5px;
+}
+
+article button {
+padding: 8px;
+background-color: #9b5cff;
+color: white;
+border: none;
+}
+
+/* Rodapé */
+
+footer {
+background-color: #101426;
+text-align: center;
+padding: 20px;
+margin-top: 30px;
+}
