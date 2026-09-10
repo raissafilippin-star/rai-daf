@@ -3,311 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>animes</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
-    <header>
-
-    <h1>ANIME</h1>
-
-    <input type="text" placeholder="Buscar animes">
-
-    <button>Entrar</button>
-    <button>Cadastrar</button>
-
-</header>
-
-
-<nav>
-
-    <h2>Menu</h2>
-
-    <a href="#">Início</a>
-    <a href="#">Explorar</a>
-    <a href="#">Novidades</a>
-    <a href="#">Em alta</a>
-    <a href="#">Gêneros</a>
-    <a href="#">Calendário</a>
-    <a href="#">Favoritos</a>
-
-    <h2>Minha conta</h2>
-
-    <a href="#">Assistidos</a>
-    <a href="#">Lista de desejos</a>
-    <a href="#">Configurações</a>
-
-</nav>
-
-
-<main>
-
-    <div>
-        <img src=".\img/banner.png" alt="banner" class="banner-principal" width="350px">
+    <title>Anime</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css"/>
+        <div>
+        <img src="./img/banner.png" alt="banner" class="banner-principal" width="600px">
         <h2>Seu próximo anime favorito está aqui!</h2>
-
-        <p>
-            Explore, assista e se apaixone por vários animes.
-        </p>
-
+        <p>Explore, assista e se apaixone por vários animes.</p>
         <button>Explorar agora</button>
 
+        <!-- Galeria na horizontal -->
+        <div class="galeria-banner">
+            <img src="img/haikyuu.png" alt="Haikyuu">
+            <img src="img/blue lock.png" alt="Blue Lock">
+            <img src="img/one piece.png" alt="One Piece">
+            <img src="img/7 time loop.png" alt="7th Time Loop">
+        </div>
     </div>
 
-
+    <!-- SEÇÃO EM DESTAQUE -->
     <div>
-
         <h2>Em destaque</h2>
-
-
-        <div>
-
-            <img src="img/haikyuu.png" alt="Haikyuu" id="haikyuu">
-
-            <h3>Haikyuu!!</h3>
-
-            <p>Esporte - Escolar</p>
-
-            <p>Nota: 4.8</p>
-
-            <button>Assistir</button>
-
+        
+        <div class="cards-container">
+           <!-- Galeria na horizontal -->
+        <div class="galeria-banner">
+            <img src="img/death note.png" alt="death note">
+            <img src="img/demon slayer.png" alt="Blue Lock">
+            <img src="img/Jujutsu Kaisen.png" alt="One Piece">
+            <img src="img/attack on titan.png" alt="7th Time Loop">
         </div>
 
 
-        <div>
-
-            <img src="img/blue lock.png" alt="Blue Lock" id="blue-lock">
-
-            <h3>Blue Lock</h3>
-
-            <p>Esporte - Suspense</p>
-
-            <p>Nota: 4.7</p>
-
-            <button>Assistir</button>
-
         </div>
-
-
-        <div>
-
-            <img src="img/one piece.png" alt="One Piece" id="one-piece">
-
-            <h3>One Piece</h3>
-
-            <p>Aventura - Ação</p>
-
-            <p>Nota: 4.9</p>
-
-            <button>Assistir</button>
-
-        </div>
-
-
-        <div>
-
-            <img src="img/7 time loop.png" alt="7th Time Loop" id="time-loop">
-
-            <h3>7th Time Loop</h3>
-
-            <p>Fantasia - Romance</p>
-
-            <p>Nota: 4.6</p>
-
-            <button>Assistir</button>
-
-        </div>
-
-
-        <div>
-
-            <img src="death-note.jpg" alt="Death Note">
-
-            <h3>Death Note</h3>
-
-            <p>Suspense - Psicológico</p>
-
-            <p>Nota: 4.8</p>
-
-            <button>Assistir</button>
-
-        </div>
-
     </div>
-
-
-    <div>
-
-        <h2>Continue assistindo</h2>
-
-
-        <div>
-
-            <img src="haikyuu.jpg" alt="Haikyuu">
-
-            <h3>Haikyuu!!</h3>
-
-            <p>Episódio 15</p>
-
-            <p>75% assistido</p>
-
-            <button>Continuar</button>
-
-        </div>
-
-
-        <div>
-
-            <img src="blue-lock.jpg" alt="Blue Lock">
-
-            <h3>Blue Lock</h3>
-
-            <p>Episódio 8</p>
-
-            <p>40% assistido</p>
-
-            <button>Continuar</button>
-
-        </div>
-
-
-        <div>
-
-            <img src="one-piece.jpg" alt="One Piece">
-
-            <h3>One Piece</h3>
-
-            <p>Episódio 1012</p>
-
-            <p>60% assistido</p>
-
-            <button>Continuar</button>
-
-        </div>
-
-
-        <div>
-
-            <img src="death-note.jpg" alt="Death Note">
-
-            <h3>Death Note</h3>
-
-            <p>Episódio 12</p>
-
-            <p>30% assistido</p>
-
-            <button>Continuar</button>
-
-        </div>
-
-    </div>
-
-
-    <div>
-
-        <h2>Meus assistidos</h2>
-
-        <p>Animes assistidos: 23</p>
-
-        <p>Episódios assistidos: 418</p>
-
-        <button>Ver todos os assistidos</button>
-
-    </div>
-
-
-    <div>
-
-        <h2>Lista de animes assistidos</h2>
-
-
-        <div>
-
-            <img src="haikyuu.jpg" alt="Haikyuu">
-
-            <h3>Haikyuu!!</h3>
-
-            <p>Temporada 4</p>
-
-            <p>Episódio 85</p>
-
-            <p>Concluído</p>
-
-        </div>
-
-
-        <div>
-
-            <img src="blue-lock.jpg" alt="Blue Lock">
-
-            <h3>Blue Lock</h3>
-
-            <p>Temporada 2</p>
-
-            <p>Episódio 38</p>
-
-            <p>Concluído</p>
-
-        </div>
-
-
-        <div>
-
-            <img src="one-piece.jpg" alt="One Piece">
-
-            <h3>One Piece</h3>
-
-            <p>Temporada 21</p>
-
-            <p>Episódio 1120</p>
-
-            <p>Assistindo</p>
-
-        </div>
-
-
-        <div>
-
-            <img src="death-note.jpg" alt="Death Note">
-
-            <h3>Death Note</h3>
-
-            <p>Temporada 1</p>
-
-            <p>Episódio 37</p>
-
-            <p>Assistindo</p>
-
-        </div>
-
-
-        <div>
-
-            <img src="7-time-loop.jpg" alt="7th Time Loop">
-
-            <h3>7th Time Loop</h3>
-
-            <p>Temporada 1</p>
-
-            <p>Episódio 12</p>
-
-            <p>Concluído</p>
-
-        </div>
-
-    </div>
-
 </main>
-
-
-<footer>
-
-    <p>ANIME - 2026</p>
-
-</footer>
-
-
-
-</body>
-</html>
