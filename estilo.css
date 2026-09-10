@@ -1,134 +1,152 @@
-/* Página */
-
 body {
-background-color: #080b18;
-color: white;
-font-family: Arial, sans-serif;
-margin: 0;
+    background-color: #080b18;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
-/* Cabeçalho */
-.banner { 
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-
-
+/* Header */
 header {
-background-color: #101426;
-padding: 20px;
-text-align: center;
+    background-color: #101426;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1a2035;
 }
 
 header h1 {
-color: #9b5cff;
+    color: #9b5cff;
+    margin: 0;
 }
 
 header input {
-padding: 10px;
-width: 300px;
+    padding: 10px 15px;
+    width: 350px;
+    border-radius: 20px;
+    border: 1px solid #2a324d;
+    background-color: #080b18;
+    color: white;
 }
 
-header button {
-padding: 10px;
-margin: 5px;
+.btn-header {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid #9b5cff;
+    background: transparent;
+    color: white;
+    cursor: pointer;
 }
 
-/* Menu */
+.btn-primary {
+    background-color: #9b5cff;
+}
 
+/* Container Principal */
+.container-principal {
+    display: flex;
+    min-height: calc(100vh - 120px);
+}
+
+/* Sidebar Navigation */
 nav {
-background-color: #101426;
-padding: 20px;
-width: 200px;
+    background-color: #101426;
+    padding: 20px;
+    width: 220px;
+    flex-shrink: 0;
+}
+
+nav h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6c728f;
+    margin-top: 20px;
 }
 
 nav a {
-display: block;
-color: white;
-text-decoration: none;
-padding: 10px;
+    display: block;
+    color: #a0a5c0;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    transition: 0.2s;
 }
 
-nav a {
-background-color: #9b5cff;
+nav a:hover {
+    background-color: #9b5cff;
+    color: white;
 }
 
-/* Conteúdo */
- #one-piece {
-    width: 25%;
-    height: 300px;
- }
+nav a.ativo {
+    background-color: #9b5cff;
+    color: white;
+    font-weight: bold;
+}
 
- #haikyuu {
-    width: 25%;
-    height: 300px;
- }
-
- #blue-lock {
-    width: 25%;
-    height: 300px;
- }
-#time-loop {
-    width: 25%;
-    height: 300px;
- }
-
+/* Main Content */
 main {
-padding: 30px;
+    padding: 30px;
+    flex-grow: 1;
 }
 
-main section img {
+.banner-principal {
     width: 100%;
-    height: 300px;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.btn-destaque {
+    padding: 12px 24px;
+    background-color: #9b5cff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Galeria de Cards */
+.galeria-banner {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.card-anime {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #101426;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card-anime:hover {
+    transform: translateY(-5px);
+}
+
+.card-anime img {
+    width: 100%;
+    height: 220px;
     object-fit: cover;
 }
-/* Títulos */
 
-h2 {
-color: #9b5cff;
+.card-anime span {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
 }
 
-/* Banner */
-
-main section {
-background-color: #11172a;
-padding: 30px;
-margin-bottom: 30px;
-}
-
-/* Animes */
-
-article {
-background-color: #11172a;
-display: inline-block;
-width: 180px;
-margin: 10px;
-padding: 15px;
-vertical-align: top;
-}
-
-article img {
-width: 100%;
-height: 250px;
-}
-
-article h3 {
-margin-bottom: 5px;
-}
-
-article button {
-padding: 8px;
-background-color: #9b5cff;
-color: white;
-border: none;
-}
-
-/* Rodapé */
-
+/* Footer */
 footer {
-background-color: #101426;
-text-align: center;
-padding: 20px;
-margin-top: 30px;
+    background-color: #101426;
+    text-align: center;
+    padding: 15px;
+    color: #6c728f;
 }

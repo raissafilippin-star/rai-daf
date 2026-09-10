@@ -5,35 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime</title>
     <link href="estilo.css" rel="stylesheet" type="text/css"/>
-        <div>
-        <img src="./img/banner.png" alt="banner" class="banner-principal" width="600px">
-        <h2>Seu próximo anime favorito está aqui!</h2>
-        <p>Explore, assista e se apaixone por vários animes.</p>
-        <button>Explorar agora</button>
+</head>
+<body>
 
-        <!-- Galeria na horizontal -->
-        <div class="galeria-banner">
-            <img src="img/haikyuu.png" alt="Haikyuu">
-            <img src="img/blue lock.png" alt="Blue Lock">
-            <img src="img/one piece.png" alt="One Piece">
-            <img src="img/7 time loop.png" alt="7th Time Loop">
-        </div>
+    <header>
+        <h1>ANIME</h1>
+        <input type="text" placeholder="Buscar animes">
+        <button class="btn-header">Entrar</button>
+        <button class="btn-header btn-primary">Cadastrar</button>
+    </header>
+
+    <div class="container-principal">
+
+        <nav>
+            <h2>Menu</h2>
+            <a href="#">Início</a>
+            <a href="#">Explorar</a>
+            <a href="#">Novidades</a>
+            <a href="#">Em alta</a>
+            <a href="#">Gêneros</a>
+            <a href="#">Calendário</a>
+            <a href="#">Favoritos</a>
+
+            <h2>Minha conta</h2>
+            <a href="#">Assistidos</a>
+            <a href="#">Lista de desejos</a>
+            <a href="#">Configurações</a>
+        </nav>
+
+        <main>
+            <!-- BANNER PRINCIPAL -->
+            <section class="secao-hero">
+                <img src="./img/banner.png" alt="banner" class="banner-principal">
+                <h2>Seu próximo anime favorito está aqui!</h2>
+                <p>Explore, assista e se apaixone por vários animes.</p>
+                <button class="btn-destaque">Explorar agora</button>
+
+                <!-- GALERIA DE DESTAQUES -->
+                <div class="galeria-banner">
+                    <div class="card-anime">
+                        <img src="img/haikyuu.png" alt="Haikyuu">
+                        <span>Haikyuu!!</span>
+                    </div>
+                    <div class="card-anime">
+                        <img src="img/blue lock.png" alt="Blue Lock">
+                        <span>Blue Lock</span>
+                    </div>
+                    <div class="card-anime">
+                        <img src="img/one piece.png" alt="One Piece">
+                        <span>One Piece</span>
+                    </div>
+                    <div class="card-anime">
+                        <img src="img/7 time loop.png" alt="7th Time Loop">
+                        <span>7th Time Loop</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEÇÃO EM DESTAQUE -->
+            <section>
+                <h2>Em destaque</h2>
+                <div class="galeria-banner">
+                    <div class="card-anime">
+                        <img src="img/death note.png" alt="Death Note">
+                        <span>Death Note</span>
+                    </div>
+                    <div class="card-anime">
+                        <img src="img/demon slayer.png" alt="Demon Slayer">
+                        <span>Demon Slayer</span>
+                    </div>
+                    <div class="card-anime">
+                        <img src="img/Jujutsu Kaisen.png" alt="Jujutsu Kaisen">
+                        <span>Jujutsu Kaisen</span>
+                    </div>
+                    <div class="card-anime">
+                        <img src="img/attack on titan.png" alt="Attack on Titan">
+                        <span>Attack on Titan</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
     </div>
 
-    <!-- SEÇÃO EM DESTAQUE -->
-    <div>
-        <h2>Em destaque</h2>
-        
-        <div class="cards-container">
-           <!-- Galeria na horizontal -->
-        <div class="galeria-banner">
-            <img src="img/death note.png" alt="death note">
-            <img src="img/demon slayer.png" alt="Blue Lock">
-            <img src="img/Jujutsu Kaisen.png" alt="One Piece">
-            <img src="img/attack on titan.png" alt="7th Time Loop">
-        </div>
+    <footer>
+        <p>ANIME - 2026</p>
+    </footer>
 
+    <script src="script.js"></script>
 
-        </div>
-    </div>
-</main>
+</body>
+</html>
