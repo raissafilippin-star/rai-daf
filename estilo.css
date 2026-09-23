@@ -116,6 +116,13 @@ main {
     width: 100%;
 }
 
+.card {
+    color: #a0a5c0;
+}
+
+.secao-hero {
+    color: #a0a5c0;
+}
 .card-anime {
     flex: 1;
     display: flex;
